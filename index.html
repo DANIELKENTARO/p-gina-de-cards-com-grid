@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card grid</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: rgb(172, 143, 99);
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            padding: 1pt;
+            list-style: none;
+            gap: 10px;
+        }
+        header section{
+            border: 1px solid aliceblue;
+        }
+        input{
+            border-radius: 5pt;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+            grid-template-rows: auto;
+            background-color: rgb(49, 49, 49);
+
+        }
+        main section{
+            border: 1px solid aliceblue;
+        }
+        .card{
+            padding: 10vh;
+            overflow: hidden;
+            word-wrap: break-word;
+            justify-content: right;
+            padding: 0;
+            text-align: center;
+            color: rgba(248, 255, 144, 0.685);
+        }
+        h3{
+            border-bottom: 1px solid whitesmoke;
+        }
+        .card img{
+            width: 19vw;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+        footer{
+            color: rgba(197, 197, 197, 0.884);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="" alt="logo">
+        </section>
+        <section>
+            <input type="search" name="search" id="pesquisa">
+        </section>
+        <section>
+            <li>login</li>
+        </section>
+        <section>
+            <li>criar conta</li>
+        </section><section>
+            <li>carrinho</li>
+        </section>
+    </header>
+    <main>
+        <section class="card"><h3>produto 1</h3>
+            <img src="img/logo.png" alt="aaaa"><hr>
+            preço: R$99,00 <hr> 
+            descrição:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </section>
+        <section class="card"><h3>produto 2</h3>
+            <img src="img/logo.png" alt="aaaa"><hr>
+            preço: R$99,00 <hr> 
+            descrição:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </section>
+        <section class="card"><h3>produto 3</h3>
+            <img src="img/logo.png" alt="aaaa"><hr>
+            preço: R$99,00 <hr> 
+            descrição:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </section>
+        <section class="card"><h3>produto 4</h3>
+            <img src="img/logo.png" alt="aaaa"><hr>
+            preço: R$99,00 <hr> 
+            descrição:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </section>
+        <section class="card"><h3>produto 5</h3>
+            <img src="img/logo.png" alt="aaaa"><hr>
+            preço: R$99,00 <hr> 
+            descrição: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </section>
+    <footer> todos os direitos reservados</footer>
+</body>
+</html>
